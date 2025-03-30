@@ -1,3 +1,25 @@
+:root {
+  --youtube-red: #ff0000; /* YouTube red */
+  --youtube-black: #282828; /* YouTube black (for backgrounds) */
+  --youtube-dark-gray: #181818; /* Dark gray for text and other elements */
+  --youtube-light-gray: #d8d8d8; /* Light gray for borders and accents */
+  --youtube-white: #ffffff; /* White for text or backgrounds */
+  --youtube-light-red: #ff4c4c; /* A lighter red for hover states */
+  --youtube-gray: #8c8c8c; /* Neutral gray for secondary text */
+  --youtube-gray-dark: #313131;
+  --youtube-dark: #222222; /* Slightly darker tone for backgrounds */
+  --youtube-border-color: #e5e5e5; /* Light border color */
+  --youtube-shadow-color: rgba(0, 0, 0, 0.2); /* Shadow color */
+  --youtube-hover-color: #f0f0f0; /* Hover color for elements */
+  --youtube-active-color: #f0f0f0; /* Active color for elements */
+  --youtube-focus-color: #f0f0f0; /* Focus color for elements */
+  --youtube-disabled-color: #e5e5e5; /* Disabled color for elements */
+  --youtube-error-color: #ff4c4c; /* Error color for elements */
+  --youtube-success-color: #00ff00; /* Success color for elements */
+  --youtube-warning-color: #ff8000; /* Warning color for elements */
+  --youtube-info-color: #00bfff; /* Info color for elements */
+  --youtube-text-color: #f9f9f9;
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,87 +36,136 @@ body {
 }
 
 .nav-top {
+  height: 4vw;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1vw 1.3vw;
-  background-color: black;
+  background-color: var(--youtube-black);
 }
-
-.nav-top-left,
-.nav-top-middle,
-.nav-top-right {
+.nav-top-left {
+  height: 100%;
+  width: 21vw;
   display: flex;
   align-items: center;
+  background-color: var(--youtube-black);
+  gap: 1.4vw;
+  padding: 0 1vw;
 }
-
 .nav-top-left > i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  color: white;
-  cursor: pointer;
+  font-size: 1.6vw;
+  display: flex;
+  align-items: center;
+  color: var(--youtube-text-color);
 }
-
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.1vw;
 }
-
 .logo > i {
-  font-size: 2rem;
-  color: red;
-  margin-right: 0.5rem;
-}
-
-.logo div {
+  font-size: 2.3vw;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  color: var(--youtube-red);
+  overflow: hidden;
 }
-
-.nav-top-left > div > h6 {
-  font-size: 1.7vw;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 600;
-  margin: 0;
-  color: white;
-  cursor: pointer;
-  text-transform: capitalize;
+.logo > h6 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: var(--youtube-text-color);
   letter-spacing: -0.1vw;
 }
-
-.nav-top-left > div > p {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: rgb(141, 138, 138);
-}
-
-.nav-search {
+.logo > p {
+  font-size: 0.2vw;
   display: flex;
   align-items: center;
+  margin-top: -1vw;
+  color: var(--youtube-gray);
 }
-
-.nav-search input {
-  padding: 0.5rem;
-  border-radius: 2rem;
+.nav-top-middle {
+  height: 100%;
+  width: 60vw;
+  background-color: var(--youtube-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8vw;
+}
+.nav-top-middle > .search-box {
+  height: 2.8vw;
+  width: 40vw;
+  background-color: black;
+  border-radius: 1.6vw;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--youtube-gray);
+}
+.nav-top-middle > .search-box > input {
+  height: 100%;
+  width: 90%;
   border: none;
-  width: 200px;
+  outline: none;
+  padding: 0 1.5vw;
+  border-radius: 1.6vw;
+  font-size: 1vw;
+  background-color: black;
 }
-
-.nav-search i {
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-}
-
-.nav-top-right {
+.nav-top-middle > .search-box > i {
+  height: 100%;
+  width: 10%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4vw;
+  cursor: pointer;
+  border-left: 1px solid var(--youtube-gray);
 }
-
-.nav-top-right > div {
-  margin-right: 0.5rem;
+.nav-top-middle > i {
+  padding: 0.6vw 0.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--youtube-white);
+  font-size: 1.4vw;
+  cursor: pointer;
+  background-color: var(--youtube-gray-dark);
+  border-radius: 50%;
 }
-
-.nav-top-right > div > i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
+.nav-top-right {
+  height: 100%;
+  width: 19vw;
+  background-color: var(--youtube-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+}
+.nav-top-right > i {
+  font-size: 1.8vw;
+  color: var(--youtube-white);
+  cursor: pointer;
+}
+.nav-top-right .create-box {
+  height: 2.6vw;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--youtube-gray-dark);
+  cursor: pointer;
+  border-radius: 3vw;
+}
+.nav-top-right .create-box > i {
+  font-size: 1.9vw;
+  color: var(--youtube-white);
+  font-weight: 100;
+}
+.nav-top-right .create-box > p {
+  font-size: 1vw;
+  font-weight: 600;
+  color: var(--youtube-white);
+  text-transform: capitalize;
 }
