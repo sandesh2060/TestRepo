@@ -2,17 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-
-html, body {
-  height: 100%;
-  width: 100%;
-    font-family: Arial, sans-serif;
+body {
+  background-color: #f9f9f9;
 }
-
 .wrapper {
-  height: 100%;
   width: 100%;
+}
+.nav-top {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 1.3vw;
+  background-color: rgb(161, 144, 179);
+}
+.nav-top-left,
+.nav-top-middle,
+.nav-top-right,
+.nav-top-left > i,
+.nav-top-right > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
