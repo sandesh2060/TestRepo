@@ -3,62 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>youtube clone</title>
+    <meta
+      name="description"
+      content="YouTube Clone - Watch, Share, and Discover Content"
+    />
+    <meta name="keywords" content="YouTube, clone, video, media, streaming" />
+    <meta name="author" content="Your Name" />
+    <title>YouTube Clone</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="wrapper">
       <div class="nav-top">
         <div class="nav-top-left">
-          <i class="ri-menu-line"></i>
+          <i class="ri-menu-line" aria-label="Menu"></i>
           <div class="logo">
-            <i class="ri-youtube-fill"> </i>
+            <i class="ri-youtube-fill" aria-label="YouTube Logo"></i>
             <h6>YouTube</h6>
             <p>NP</p>
           </div>
         </div>
         <div class="nav-top-middle">
           <div class="search-box">
-            <input type="text" placeholder="Search" />
-            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Search" aria-label="Search input" />
+            <i class="ri-search-line" aria-label="Search icon"></i>
           </div>
-          <i class="ri-mic-fill"></i>
+          <i class="ri-mic-fill" aria-label="Voice search"></i>
         </div>
         <div class="nav-top-right">
-          <div class="create-box">
+          <div class="create-box" aria-label="Create New Content">
             <i class="ri-add-fill"></i>
-            <p>create</p>
+            <p>Create</p>
           </div>
-          <i class="ri-notification-line"></i>
-          <i class="ri-account-circle-fill"></i>
+          <i class="ri-notification-line" aria-label="Notifications"></i>
+          <i class="ri-account-circle-fill" aria-label="User Account"></i>
         </div>
       </div>
+
       <div class="hero-div">
         <aside class="side-nav">
           <section class="home-section">
-            <button class="home">Home</button>
-            <button class="shorts">Shorts</button>
-            <button class="subscription">Subscription</button>
-          </section>
-          <section class="you">
-            <button class="History">History</button>
-            <button class="Playlist">Playlist</button>
-            <button class="your-videos">Your videos</button>
-            <button class="watch-later">Watch later</button>
-            <button class="liked-videos">Liked videos</button>
-            <button class="Your-clip">Your clips</button>
-          </section>
-          <section class="subscription">
-            <button class="profiles">
-              <div class="profile"></div>
-              <p class="chhanel-name">sandesh lamichhane</p>
+            <button class="home" aria-label="Home">
+              <i class="ri-home-2-fill"></i>
+              <p>Home</p>
+            </button>
+            <button class="shorts" aria-label="Shorts"><p>Shorts</p></button>
+            <button class="subscription" aria-label="Subscription">
+              <p>Subscription</p>
             </button>
           </section>
-          <section class="explore"></section>
+          <section class="you">
+            <button class="history" aria-label="History">History</button>
+            <button class="playlist" aria-label="Playlist">Playlist</button>
+            <button class="your-videos" aria-label="Your Videos">
+              Your Videos
+            </button>
+            <button class="watch-later" aria-label="Watch Later">
+              Watch Later
+            </button>
+            <button class="liked-videos" aria-label="Liked Videos">
+              Liked Videos
+            </button>
+            <button class="your-clip" aria-label="Your Clips">
+              Your Clips
+            </button>
+          </section>
+          <section class="subscription">
+            <button class="profiles" aria-label="Profile">
+              <div class="profile"></div>
+              <p class="chhanel-name">Sandesh Lamichhane</p>
+            </button>
+          </section>
+          <section class="explore">
+            <button class="trending" aria-label="Trending">Trending</button>
+            <button class="music" aria-label="Music">Music</button>
+            <button class="gaming" aria-label="Gaming">Gaming</button>
+            <button class="sports" aria-label="Sports">Sports</button>
+          </section>
+          <section class="more">
+            <button class="youtube-premium" aria-label="YouTube Premium">
+              YouTube Premium
+            </button>
+            <button class="youtube-studio" aria-label="YouTube Studio">
+              YouTube Studio
+            </button>
+            <button class="youtube-music" aria-label="YouTube Music">
+              YouTube Music
+            </button>
+            <button class="youtube-kids" aria-label="YouTube Kids">
+              YouTube Kids
+            </button>
+          </section>
+          <section class="settings">
+            <button class="setting" aria-label="Settings">Settings</button>
+            <button class="report" aria-label="Report">Report</button>
+            <button class="help" aria-label="Help">Help</button>
+            <button class="feed-back" aria-label="Feedback">Feedback</button>
+          </section>
         </aside>
       </div>
     </div>
