@@ -36,7 +36,7 @@ body {
 }
 
 .nav-top {
-  height: 4vw;
+  height: 4.8vw;
   width: 100%;
   display: flex;
   align-items: center;
@@ -168,4 +168,14 @@ body {
   font-weight: 600;
   color: var(--youtube-white);
   text-transform: capitalize;
+}
+.hero-div {
+  width: 100%;
+  height: auto;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5vw;
 }
