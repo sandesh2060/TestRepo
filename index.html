@@ -3,153 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="YouTube Clone - Watch, Share, and Discover Content"
-    />
-    <meta name="keywords" content="YouTube, clone, video, media, streaming" />
-    <meta name="author" content="Your Name" />
     <title>YouTube Clone</title>
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="nav-top">
-        <div class="nav-top-left">
-          <i class="ri-menu-line" aria-label="Menu"></i>
-          <div class="logo">
-            <i class="ri-youtube-fill" aria-label="YouTube Logo"></i>
-            <h6>YouTube</h6>
-            <p>NP</p>
-          </div>
-        </div>
-        <div class="nav-top-middle">
-          <div class="search-box">
-            <input type="text" placeholder="Search" aria-label="Search input" />
-            <i class="ri-search-line" aria-label="Search icon"></i>
-          </div>
-          <i class="ri-mic-fill" aria-label="Voice search"></i>
-        </div>
-        <div class="nav-top-right">
-          <div class="create-box" aria-label="Create New Content">
-            <i class="ri-add-fill"></i>
-            <p>Create</p>
-          </div>
-          <i class="ri-notification-line" aria-label="Notifications"></i>
-          <i class="ri-account-circle-fill" aria-label="User Account"></i>
+    <header class="header">
+      <div class="logo-container">
+        <i class="fas fa-bars menu-icon"></i>
+        <div class="logo">
+          <i class="fab fa-youtube youtube-icon"></i>
+          <span>YouTube</span>
         </div>
       </div>
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+        <i class="fas fa-microphone mic-icon"></i>
+      </div>
+      <div class="user-actions">
+        <i class="fas fa-video"></i>
+        <i class="fas fa-bell"></i>
+        <div class="user-avatar">U</div>
+      </div>
+    </header>
 
-      <div class="hero-div">
-        <aside class="side-nav">
-          <section class="home-section">
-            <button class="home" aria-label="Home">
-              <i class="ri-home-2-fill"></i>
-              <p>Home</p>
-            </button>
-            <button class="shorts" aria-label="Shorts">
-              <i class="ri-video-line"></i>
-              <p>Shorts</p>
-            </button>
-            <button class="subscriptions" aria-label="Subscription">
-              <i class="ri-subscriptions-line"></i>
-              <p>Subscription</p>
-            </button>
-          </section>
-          <section class="you">
-            <button class="history" aria-label="History">
-              <i class="ri-time-line"></i>
-              <p>History</p>
-            </button>
-            <button class="playlist" aria-label="Playlist">
-              <i class="ri-playlist-fill"></i>
-              <p>Playlist</p>
-            </button>
-            <button class="your-videos" aria-label="Your Videos">
-              <i class="ri-video-line"></i>
-              <p>Your Videos</p>
-            </button>
-            <button class="watch-later" aria-label="Watch Later">
-              <i class="ri-time-fill"></i>
-              <p>Watch Later</p>
-            </button>
-            <button class="liked-videos" aria-label="Liked Videos">
-              <i class="ri-heart-line"></i>
-              <p>Liked Videos</p>
-            </button>
-            <button class="your-clip" aria-label="Your Clips">
-              <i class="ri-clip-line"></i>
-              <p>Your Clips</p>
-            </button>
-          </section>
-          <section class="subscription">
-            <button class="profiles" aria-label="Profile">
-              <div class="profile"></div>
-              <p class="chhanel-name">Sandesh Lamichhane</p>
-            </button>
-          </section>
-          <section class="explore">
-            <button class="trending" aria-label="Trending">
-              <i class="ri-trending-up-line"></i>
-              <p>Trending</p>
-            </button>
-            <button class="music" aria-label="Music">
-              <i class="ri-music-line"></i>
-              <p>Music</p>
-            </button>
-            <button class="gaming" aria-label="Gaming">
-              <i class="ri-game-line"></i>
-              <p>Gaming</p>
-            </button>
-            <button class="sports" aria-label="Sports">
-              <i class="ri-football-line"></i>
-              <p>Sports</p>
-            </button>
-          </section>
-          <section class="more">
-            <button class="youtube-premium" aria-label="YouTube Premium">
-              <i class="ri-star-line"></i>
-              <p>YouTube Premium</p>
-            </button>
-            <button class="youtube-studio" aria-label="YouTube Studio">
-              <i class="ri-slideshow-2-line"></i>
-              <p>YouTube Studio</p>
-            </button>
-            <button class="youtube-music" aria-label="YouTube Music">
-              <i class="ri-music-line"></i>
-              <p>YouTube Music</p>
-            </button>
-            <button class="youtube-kids" aria-label="YouTube Kids">
-              <i class="ri-child-line"></i>
-              <p>YouTube Kids</p>
-            </button>
-          </section>
-          <section class="settings">
-            <button class="setting" aria-label="Settings">
-              <i class="ri-settings-3-line"></i>
-              <p>Settings</p>
-            </button>
-            <button class="report" aria-label="Report">
-              <i class="ri-exclamation-triangle-line"></i>
-              <p>Report</p>
-            </button>
-            <button class="help" aria-label="Help">
-              <i class="ri-question-line"></i>
-              <p>Help</p>
-            </button>
-            <button class="feed-back" aria-label="Feedback">
-              <i class="ri-feedback-line"></i>
-              <p>Feedback</p>
-            </button>
-          </section>
-        </aside>
-      </div>
+    <div class="main-container">
+      <aside class="sidebar">
+        <div class="sidebar-item active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-compass"></i>
+          <span>Explore</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-subscript"></i>
+          <span>Subscriptions</span>
+        </div>
+        <hr />
+        <div class="sidebar-item">
+          <i class="fas fa-bookmark"></i>
+          <span>Library</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-history"></i>
+          <span>History</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-play-circle"></i>
+          <span>Your Videos</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-clock"></i>
+          <span>Watch Later</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-thumbs-up"></i>
+          <span>Liked Videos</span>
+        </div>
+        <hr />
+        <h3 class="subscriptions-title">SUBSCRIPTIONS</h3>
+        <div class="sidebar-item">
+          <div class="channel-avatar">A</div>
+          <span>Acme Channel</span>
+        </div>
+        <div class="sidebar-item">
+          <div class="channel-avatar">B</div>
+          <span>Best Tutorials</span>
+        </div>
+        <div class="sidebar-item">
+          <div class="channel-avatar">C</div>
+          <span>Cool Tech</span>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="categories">
+          <button class="category-btn active">All</button>
+          <button class="category-btn">Music</button>
+          <button class="category-btn">Gaming</button>
+          <button class="category-btn">Live</button>
+          <button class="category-btn">Programming</button>
+          <button class="category-btn">Comedy</button>
+          <button class="category-btn">Podcasts</button>
+          <button class="category-btn">Recently uploaded</button>
+          <button class="category-btn">Watched</button>
+        </div>
+
+        <div class="videos-container">
+          <!-- Videos will be added here by JavaScript -->
+        </div>
+      </main>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
